@@ -16,7 +16,7 @@ std::vector<std::string> FileManager::ReadAllLinesFromFile(const std::string& pa
 		inputStream.close();
 		return returnValues;
 	}
-	
+
 	throw;
 }
 
