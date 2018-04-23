@@ -1,5 +1,6 @@
 ﻿#include "FileManager.h"
 #include <string>
+#include <iostream>
 
 std::vector<std::string> FileManager::ReadAllLinesFromFile(const std::string& path)
 {
@@ -31,7 +32,16 @@ void FileManager::WriteToFile(const std::string &path, std::vector<std::string> 
 		throw;
 }
 
-void FileManager::WriteXmlToFile(const std::string& path)
+void FileManager::WriteXmlToFile(const char* path)
 {
 	pugi::xml_document doc;
+	auto node = doc.append_child("someNode");
+	auto attribute = node.append_attribute("someAttribute");
+	auto value = attribute.set_value("someValue");
+
+	if (doc.save_file(path))
+		std::cout << "XML succesfully saved!" << std::endl;
 }
+
+std::ifstream FileManager::inputStream;
+std::ofstream FileManager::outputStream;
