@@ -1,9 +1,10 @@
 ﻿#pragma once
 #include <vector>
+#include "Item.h"
 
 struct ItemCollection
 {
-	std::vector<int> Collection;
+	std::vector<Item> Collection;
 	ItemCollection();
-	ItemCollection(std::vector<int>Collection);
+	ItemCollection(std::vector<Item>Collection);
 };
