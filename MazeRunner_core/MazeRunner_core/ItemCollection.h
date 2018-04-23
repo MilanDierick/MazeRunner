@@ -3,5 +3,7 @@
 
 struct ItemCollection
 {
-	std::vector<int> itemCollection;
+	std::vector<int> Collection;
+	ItemCollection();
+	ItemCollection(std::vector<int>Collection);
 };
