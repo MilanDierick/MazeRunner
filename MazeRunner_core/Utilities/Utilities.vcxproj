@@ -116,9 +116,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\MazeRunner_core\FileManager.h" />
+    <ClInclude Include="IdProvider.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\MazeRunner_core\FileManager.cpp" />
+    <ClCompile Include="IdProvider.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
