@@ -4,7 +4,7 @@
 
 struct ItemCollection
 {
-	std::vector<Item> Collection;
+	std::vector<Item> collection;
 	ItemCollection();
-	ItemCollection(std::vector<Item>Collection);
+	explicit ItemCollection(std::vector<Item> itemCollection);
 };

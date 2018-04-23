@@ -1,13 +1,14 @@
 ﻿#include "Item.h"
-#include <vector>
 
 Item::Item()
 {
+	this->name = "";
+	this->id = "";
 	
 }
-Item::Item(vector<int> itemcollection)
+Item::Item(const std::string& name, const std::string& id)
 {
-	
+	this->name = name;
+	this->id = id;
 }
-
 
