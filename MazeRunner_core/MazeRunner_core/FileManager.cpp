@@ -30,3 +30,8 @@ void FileManager::WriteToFile(const std::string &path, std::vector<std::string> 
 	else
 		throw;
 }
+
+void FileManager::WriteXmlToFile(const std::string& path)
+{
+	pugi::xml_document doc;
+}
