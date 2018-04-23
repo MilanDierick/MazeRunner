@@ -3,7 +3,7 @@
 ItemCollection::ItemCollection()
 = default;
 
-ItemCollection::ItemCollection(std::vector<int> itemCollection)
+ItemCollection::ItemCollection(const std::vector<Item> itemCollection)
 {
-	this->Collection = itemCollection;
+	this->collection = itemCollection;
 }
