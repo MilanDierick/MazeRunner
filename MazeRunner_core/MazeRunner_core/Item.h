@@ -1,15 +1,11 @@
 ﻿#pragma once
-#include  <vector>
-
-using namespace std;
+#include <string>
 
 class Item
 {
 public:
+	std::string name;
+	std::string id;
 	Item();
-	Item(vector<int> itemcollection);
-
-private:
-	vector<int> itemcollection;
-	
+	Item(const std::string& name, const std::string& id);	
 };

@@ -18,9 +18,15 @@
     <ClInclude Include="..\MazeRunner_core\FileManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="IdProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\MazeRunner_core\FileManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IdProvider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
